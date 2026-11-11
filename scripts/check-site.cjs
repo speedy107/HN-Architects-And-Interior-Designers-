@@ -70,6 +70,18 @@ for (const photo of photographs) {
     `Photograph absent from its gallery: ${photo.asset}`,
   );
 }
+const homepage = fs.readFileSync(path.join(dist, "index.html"), "utf8");
+for (const chapter of ["threshold", "room", "detail"]) {
+  assert(homepage.includes(`id="${chapter}"`), `Missing photographic chapter: ${chapter}`);
+  assert(homepage.includes(`href="#${chapter}"`), `Missing chapter navigation: ${chapter}`);
+}
+assert.equal((homepage.match(/<details class="project-reel /g) || []).length, 5, "Five expandable projects");
+assert(!homepage.includes('class="intro-hn"'), "Discarded giant wordmark must not return");
+for (const photo of photographs) {
+  const gallery = fs.readFileSync(path.join(dist, "projects", photo.project + ".html"), "utf8");
+  assert(gallery.includes(`href="../${photo.asset}"`), `Missing direct full-frame fallback: ${photo.asset}`);
+  assert(gallery.includes('<dialog class="photo-viewer"'), `Missing photograph viewer: ${photo.project}`);
+}
 assert.equal(photographs.length, 38);
 assert(!/\b(?:Ulwe|Mumbai|Bay Bliss|Directions)\b/i.test(allHTML));
 console.log(

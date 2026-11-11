@@ -1,40 +1,95 @@
 (() => {
   const $ = (selector) => document.querySelector(selector);
-  const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
-  const perspectiveImage = $("#perspective-image");
-  const controls = document.querySelectorAll("[data-perspective]");
-  if (perspectiveImage && controls.length) {
-    $(".perspective-control").hidden = false;
-    let request = 0;
-    controls.forEach((button, index) => {
-      button.addEventListener("click", async () => {
-        if (button.getAttribute("aria-pressed") === "true") return;
-        const currentRequest = ++request;
-        const next = new Image();
-        next.src = button.dataset.perspective;
-        try {
-          await next.decode();
-          if (currentRequest !== request) return;
-          perspectiveImage.src = next.src;
-          perspectiveImage.alt = "Entrance: " + button.dataset.description;
-          controls.forEach((control) =>
-            control.setAttribute("aria-pressed", String(control === button)),
-          );
-          $("#perspective-index").textContent = `0${index + 1} / 03`;
-          $("#perspective-status").textContent =
-            `Perspective ${index + 1}: ${button.dataset.description}`;
-          if (!reducedMotion.matches)
-            perspectiveImage.animate([{ opacity: 0.65 }, { opacity: 1 }], {
-              duration: 300,
-              easing: "ease-out",
-            });
-        } catch {
-          if (currentRequest === request)
-            $("#perspective-status").textContent =
-              "This photograph could not load. Please choose another perspective.";
-        }
+  document.body.classList.add("enhanced");
+  const updateHeader = () =>
+    document.body.classList.toggle("scrolled", scrollY > 50);
+  updateHeader();
+  addEventListener("scroll", updateHeader, { passive: true });
+  const film = $(".film");
+  if (film) {
+    const links = [...document.querySelectorAll(".film-nav a")];
+    const scenes = [...document.querySelectorAll(".film-scene")];
+    let ticking = false;
+    function updateChapters() {
+      const filmBounds = film.getBoundingClientRect();
+      document.body.classList.toggle(
+        "past-film",
+        filmBounds.bottom < innerHeight * 0.3 || filmBounds.top > innerHeight,
+      );
+      let active = scenes[0];
+      scenes.forEach((scene) => {
+        if (scene.getBoundingClientRect().top <= innerHeight * 0.5)
+          active = scene;
       });
+      links.forEach((link) => {
+        if (link.hash === "#" + active.id)
+          link.setAttribute("aria-current", "step");
+        else link.removeAttribute("aria-current");
+      });
+      ticking = false;
+    }
+    addEventListener(
+      "scroll",
+      () => {
+        if (!ticking) {
+          requestAnimationFrame(updateChapters);
+          ticking = true;
+        }
+      },
+      { passive: true },
+    );
+    addEventListener("resize", updateChapters);
+    updateChapters();
+  }
+  const dialog = $(".photo-viewer");
+  if (dialog && typeof dialog.showModal === "function") {
+    const photographs = [...document.querySelectorAll(".gallery-view")];
+    const viewerImage = dialog.querySelector(".viewer-image img");
+    let index = 0;
+    function showPhoto(nextIndex) {
+      index = (nextIndex + photographs.length) % photographs.length;
+      const source = photographs[index];
+      const original = source.querySelector("img");
+      viewerImage.src = source.href;
+      viewerImage.alt = source.dataset.caption;
+      viewerImage.width = original.width;
+      viewerImage.height = original.height;
+      $("#viewer-caption").textContent = source.dataset.caption;
+      $("#viewer-count").textContent =
+        `${String(index + 1).padStart(2, "0")} / ${String(photographs.length).padStart(2, "0")}`;
+    }
+    photographs.forEach((link, photoIndex) =>
+      link.addEventListener("click", (event) => {
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey)
+          return;
+        event.preventDefault();
+        showPhoto(photoIndex);
+        dialog.showModal();
+        document.body.classList.add("viewer-open");
+      }),
+    );
+    dialog
+      .querySelector(".viewer-close")
+      .addEventListener("click", () => dialog.close());
+    dialog
+      .querySelector(".viewer-prev")
+      .addEventListener("click", () => showPhoto(index - 1));
+    dialog
+      .querySelector(".viewer-next")
+      .addEventListener("click", () => showPhoto(index + 1));
+    dialog.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        showPhoto(index - 1);
+      }
+      if (event.key === "ArrowRight") {
+        event.preventDefault();
+        showPhoto(index + 1);
+      }
     });
+    dialog.addEventListener("close", () =>
+      document.body.classList.remove("viewer-open"),
+    );
   }
   // A construction anchor opens its native disclosure, including on direct links.
   function revealConstruction() {

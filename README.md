@@ -24,15 +24,15 @@ CSS and browser interactions are in `dist/portfolio.css` and `dist/portfolio.js`
 
 All 38 supplied photographs are retained: 28 finished-space images and 10 construction images. `project-assets.json` records original-to-web mappings and image dimensions. The existing WebP images and original transparent logo are unchanged. There are no generated, recoloured, retouched or stock replacements. Home-page frames crop selected photographs; the project galleries preserve full frames.
 
-Barlow Condensed Light is locally hosted, sourced from the [Google Fonts repository](https://github.com/google/fonts/tree/main/ofl/barlowcondensed), with its SIL Open Font License included at `dist/assets/barlow-OFL.txt`. Instrument Sans and its medium weight are the existing local body fonts. All fonts and photographs load locally; the site makes no external resource requests. Legacy Italiana and GSAP files remain in the asset directory for compatibility, but are not loaded by any page.
+Existing Instrument Sans and its medium weight are locally hosted. Display text is deliberately restrained; the original studio logo carries the identity and photography owns the screen. Legacy Barlow, Italiana and GSAP assets remain in the directory but are not loaded. The site requests no external runtime resources.
 
 ## Interaction and access
 
-The opening perspective control switches between three actual Entrance photographs, with pressed states and an accessible status message. Its controls are only revealed when JavaScript is available. It does not autoplay. Photography, navigation and native disclosures work without JavaScript.
+The homepage opens with three photographic chapters: Threshold, Room and Detail. Native sticky positioning lets one scene cover the previous one through ordinary scrolling. There is no autoplay, intercepted scrolling, simulated camera movement, loading screen or custom cursor. Chapter links jump to each scene; a small rail indicates the current chapter when JavaScript is available. Without JavaScript, the photographic sequence and anchor navigation still work.
 
-Construction anchors open the associated disclosure when JavaScript is available; the native disclosure remains manually accessible otherwise. The optional project brief downloads plain text to the visitor’s device; it does not submit or store anything. All required fields must be completed before downloading. The form is hidden without JavaScript, with direct-contact alternatives explained.
+The five project-index entries are native disclosures with photographic spreads and separate gallery links. All 38 original images remain on their project pages. A full-frame viewer progressively enhances the direct-image links: click a photograph, use previous/next buttons or arrow keys, then Escape or Close to leave. The native dialog contains focus and restores it on close. Modified clicks retain the direct-image behavior.
 
-Motion is limited to a short aperture opening and responses to user actions. Reduced motion removes these effects. The old loader, replay controls, custom cursor, liquid text and GSAP runtime have been removed.
+Construction anchors open the associated disclosure when JavaScript is available, with a manual native disclosure otherwise. The optional project brief downloads plain text locally; no data is submitted or stored. Without JavaScript the form stays hidden and direct-contact alternatives are explained. Reduced motion disables smooth scrolling, hover transitions and supported cross-document view transitions.
 
 ## Contact
 

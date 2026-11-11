@@ -1,41 +1,39 @@
 ---
 name: HN Architects & Interior Designers
-description: An experimental editorial identity built from architectural photography and condensed typography.
+description: A cinematic photographic identity, moving from threshold to room to detail.
 colors:
   bg: "#171817"
   deep: "#101110"
   ink: "#e9e4d9"
   gold: "#b69a62"
-  muted: "#85847d"
-  secondary: "#aaa99f"
+  muted: "#aaa99f"
   line: "#393b35"
 typography:
-  display-hn: {fontFamily: 'Barlow, "Arial Narrow", sans-serif', fontSize: "clamp(250px, 24vw, 420px)", fontWeight: 300, lineHeight: 0.8, letterSpacing: "-0.025em"}
-  display-wordmark: {fontFamily: 'Barlow, "Arial Narrow", sans-serif', fontSize: "19.1vw", fontWeight: 300, lineHeight: 0.77, letterSpacing: "-0.025em"}
-  headline: {fontFamily: 'Barlow, "Arial Narrow", sans-serif', fontSize: "clamp(64px, 8.5vw, 128px)", fontWeight: 300, lineHeight: 1, letterSpacing: "-0.02em"}
-  project-title: {fontFamily: 'Barlow, "Arial Narrow", sans-serif', fontSize: "clamp(72px, 9vw, 140px)", fontWeight: 300, lineHeight: 0.98, letterSpacing: "-0.02em"}
-  project-caption: {fontFamily: "Instrument, Arial, sans-serif", fontSize: "24px", fontWeight: 400, lineHeight: 1.2, letterSpacing: "-0.02em"}
-  body: {fontFamily: "Instrument, Arial, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.6}
-  navigation: {fontFamily: "Instrument, Arial, sans-serif", fontSize: "14px", fontWeight: 400}
-  photo-index: {fontFamily: 'ui-monospace, "SFMono-Regular", Consolas, monospace', fontSize: "11px", fontWeight: 400, lineHeight: 1.5}
+  invitation: {fontFamily: "Instrument, Arial, sans-serif", fontSize: "clamp(38px, 4.5vw, 68px)", fontWeight: 400, lineHeight: 1.1, letterSpacing: "-0.035em"}
+  scene-title: {fontFamily: "Instrument, Arial, sans-serif", fontSize: "clamp(40px, 4.5vw, 66px)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.035em"}
+  studio-title: {fontFamily: "Instrument, Arial, sans-serif", fontSize: "clamp(32px, 3.3vw, 50px)", fontWeight: 400, lineHeight: 1.2, letterSpacing: "-0.03em"}
+  project-title: {fontFamily: "Instrument, Arial, sans-serif", fontSize: "clamp(30px, 3.2vw, 48px)", fontWeight: 400, lineHeight: 1.12, letterSpacing: "-0.03em"}
+  reel-title: {fontFamily: "Instrument, Arial, sans-serif", fontSize: "clamp(25px, 3vw, 45px)", fontWeight: 400, lineHeight: 1.2, letterSpacing: "-0.025em"}
+  body: {fontFamily: "Instrument, Arial, sans-serif", fontSize: "16px", fontWeight: 400, lineHeight: 1.65}
+  navigation: {fontFamily: "Instrument, Arial, sans-serif", fontSize: "13px", fontWeight: 400}
+  photo-index: {fontFamily: "ui-monospace, Consolas, monospace", fontSize: "10px", fontWeight: 400, lineHeight: 1.5}
 rounded:
   square: "0"
 spacing:
-  page: "4.5vw"
+  page: "5vw"
   page-mobile: "6vw"
-  section: "140px"
-  section-mobile: "80px"
-  grid: "24px"
-  grid-mobile: "15px"
-  gallery-row: "100px"
-  gallery-row-mobile: "45px"
+  studio-section: "115px"
+  studio-section-mobile: "65px"
+  reel-grid: "24px"
+  gallery-column: "35px"
+  gallery-row: "70px"
+  gallery-row-mobile: "38px"
 components:
   line-link: {backgroundColor: "transparent", textColor: "{colors.ink}", padding: "12px 0"}
   line-link-hover: {textColor: "{colors.gold}"}
-  perspective-button: {backgroundColor: "transparent", textColor: "{colors.muted}", width: "44px", height: "44px", typography: "{typography.photo-index}"}
-  perspective-button-selected: {textColor: "{colors.ink}"}
-  input: {backgroundColor: "transparent", textColor: "{colors.ink}", rounded: "{rounded.square}", padding: "12px 0", width: "100%"}
-  disclosure-summary: {padding: "24px 0"}
+  input: {backgroundColor: "transparent", textColor: "{colors.ink}", rounded: "{rounded.square}", padding: "11px 0", width: "100%"}
+  reel-summary: {padding: "27px 0"}
+  viewer-control: {width: "44px", height: "44px"}
   photo-index: {textColor: "{colors.gold}", typography: "{typography.photo-index}"}
 ---
 
@@ -43,98 +41,53 @@ components:
 
 ## Overview
 
-**Creative North Star: "The Open Architectural Section"**
+**Cinematic and immersive: photography dominates, with dramatic framing and transitions.** Walk through Threshold → Room → Detail, then choose a project. The original transparent silver/gold logo anchors a restrained Instrument Sans identity. The oversized HN wordmark, condensed display face and three-view selector have been retired.
 
-An experimental editorial identity with cinematic scale: light condensed lettering counterbalances tall photographic apertures and deliberate gaps. Warm photographs sit directly on charcoal; unequal compositions provide variety. The original transparent silver/gold logo and all 38 supplied photographs remain the evidence.
-
-**Key Characteristics:**
-
-- Oversized condensed type and real architectural photography.
-- Charcoal grounds, warm ivory text and precise brass marks.
-- Unequal grids, square frames and open corners.
-- Manual interactions, native disclosures and progressive enhancement.
-
-The current surface contract is [.impeccable/surfaces/website.md](.impeccable/surfaces/website.md). Frontmatter tokens above describe the implementation in `dist/portfolio.css`; `secondary` names its recurring literal supporting text color.
+The surface contract is [.impeccable/surfaces/website.md](.impeccable/surfaces/website.md). These tokens describe `dist/portfolio.css`; `scripts/render-site.cjs` generates the homepage and five project pages.
 
 ## Colors
 
-### Primary
-
-**Muted Brass — gold:** Photograph indices, open corners, action rules, selection, focus, status and hover feedback.
-
-### Neutral
-
-**Charcoal — bg** is the page canvas. **Deep Ground — deep** distinguishes making/contact sections and photographic fallback surfaces. **Warm Ivory — ink** carries headings and primary text. **Supporting Grey — secondary** carries secondary paragraphs, categories and captions. **Quiet Grey — muted** marks inactive perspective numbers, instructions and field baselines. **Structural Grey — line** supplies dividers.
-
-**The Photograph Rule.** Preserve supplied photographs without a permanent color wash, saturation filter or replacement imagery.
+Charcoal is the page canvas; near black supports photographs, approach content and the viewer. Warm ivory carries primary text; supporting grey carries secondary copy. Brass identifies rules, indices, focus, active chapters and hover feedback. Thin structural grey rules divide expandable rows and contact information. Use the implemented colors directly; no additional tonal ramps are implied.
 
 ## Typography
 
-Barlow Condensed Light is self-hosted as `dist/assets/barlow-condensed-light.ttf` and registered as the CSS family `Barlow`. Existing local Instrument Sans files supply body/interface text. Monospace indices use system fonts and tabular numerals; they refer to actual photographs, perspectives or collection positions.
-
-Frontmatter records the main desktop roles. Studio body text uses 17px/1.75 within 510px; project descriptions use 16px/1.8 within 43ch. Other condensed headings vary by context: studio statement `clamp(45px, 5.8vw, 88px)/1.02`, making statement `clamp(52px, 6vw, 88px)/1.05`, contact `clamp(60px, 7vw, 104px)/1.02`. Restaurant 1 intentionally has a larger condensed collection caption.
-
-**The Two Voices Rule.** Use Barlow for expressive scale and Instrument for reading and controls. Reserve monospace for indices and perspective numbers.
+Instrument Sans is self-hosted in regular 400 and medium 500 weights. It supplies both titles and reading text; modest negative tracking gives titles definition without competing with photography. Monospace is reserved for actual scene, project and photograph indices with tabular numerals. Headings remain regular weight; the opening studio name uses medium at 15px.
 
 ## Layout
 
-Desktop editorial compositions use twelve equal columns. Studio/collection column gaps use `spacing.grid`; galleries use 28px column gaps and `spacing.gallery-row`. Page edges and section rhythm follow frontmatter. The homepage collection spans columns 2–8 for Residence, all twelve for Restaurant 1, 7–11 for Entrance, 1–6 for Restaurant 2 and 9–12 for Ice cream parlour. Frames vary from panoramic to tall; captions remain visible.
+The opening comprises three native sticky scenes, each `100svh` with a 680px desktop minimum. Threshold presents Entrance beside a narrow charcoal text margin. Room expands Restaurant 1 across the frame. Detail pairs Residence photographs at different scales. The cuts happen through ordinary scrolling; there is no scroll interception or autoplay.
 
-The opening identity places HN left, a tall Entrance aperture right and ARCHITECTS across the lower composition. Its manual selector uses actual `entrance/1.webp`, `entrance/3.webp` and `entrance/6.webp`; the first photograph is immediately present in HTML.
+The fixed header retains the original logo, Studio, Projects, Approach and Contact links. A dark top scrim supports navigation over photographs; scrolling beyond 50px gives the header a near-opaque ground. The chapter rail sits at the left on desktop, tracks the current scene with `aria-current="step"`, and hides beyond the film when enhanced. Without JavaScript it remains an ordinary in-film anchor navigation.
 
-Residence and Entrance have split project openings; the other three use wide openings. Galleries preserve full photographic frames and natural height. The following records each authored desktop sequence; filenames are relative to that project's asset folder, and column ranges are inclusive.
+Studio content uses two columns, followed by five native project reels. Residence starts open. Each reel retains a name, index and category; opening it reveals a photographic spread and a direct project action. Restaurant 1 uses one panoramic frame; Entrance pairs contained portrait frames. Construction imagery leads into direct contact.
 
-| Project | Opening | Following photographs and columns |
-| --- | --- | --- |
-| Residence | `lr2` | `lr3`: 1–12; `lr1`: 2–5; `kb2`: 7–12, +100px top; `mb2`: 1–6; `mb1`: 8–12, +110px; `kb1`: 4–8. |
-| Restaurant 1 | `4` | `1`: 1–9; `2`: 6–12; `3`: 1–9; `5`: 5–12. |
-| Entrance | `1` | `3`: 1–5; `2`: 8–12, +190px; `6`: 4–9; `4`: 1–5; `5`: 8–12, +160px. |
-| Restaurant 2 | `2` | `4`: 3–10; `3`: 1–5; `5`: 8–12, +130px; `1`: 2–11. |
-| Ice cream parlour | `3` | `1`: 2–6; `2`: 8–12, +140px; `4`: 1–4; `5`: 6–12, +150px. |
+Project pages begin with a full-height photographic opening and quiet title margin. Galleries use two columns with selective full-width landscapes and portrait offsets. Photographs preserve their full frames in gallery and viewer. Captions and actual photo indices persist. The next-project scene continues the five-project cycle.
 
-Responsive CSS uses these inclusive boundaries:
+### Responsive rules
 
-- **1800px minimum:** Gutter becomes `max(5vw, calc((100vw - 1660px) / 2))`; HN/ARCHITECTS become 470px/350px.
-- **1100px maximum:** Brand descriptor hides, navigation tightens, HN becomes 32vw and aperture width 49%. Ice cream parlour begins at column 8; galleries retain desktop compositions.
-- **700px maximum:** Gutter becomes `spacing.page-mobile`. All four navigation links remain; the separate Instagram header link hides. HN/aperture remain side by side, with ARCHITECTS below; HN is 43vw, ARCHITECTS 18.5vw, and hero height is bounded by 600px/780px. Studio uses four columns; collection/galleries use six, retaining alternating insets. Project headings become 80px. Gallery top offsets reset; landscapes span six columns, portraits alternate columns 1–5 and 2–6, except Entrance photograph 4 spans all six and Ice cream parlour photograph 4 spans 1–4. Galleries use `spacing.gallery-row-mobile`. Contact, forms and construction galleries stack; studio body stays indented.
-- **370px maximum:** Header tightens, logo shrinks, hero minimum becomes 560px and aperture width 49%. Contact heading becomes 58px, phone 26px, selected-work heading 59px; Restaurant 1's category gets its own line.
+- **1800px minimum:** gutter becomes `max(5vw, calc((100vw - 1680px) / 2))`; the Threshold photograph begins at 25%, chapter rail narrows to 15%, and scene-copy maximum becomes 20%.
+- **1100px maximum:** navigation and scene margins tighten; studio spacing becomes 85px, approach imagery 570px minimum, and ordinary reel imagery 470px high.
+- **700px maximum:** gutter becomes 6vw; header becomes 84px with a 65px logo and all four navigation links. The separate Instagram header link hides. Sticky scenes have a 700px minimum; photography fills the viewport behind readable lower scrims, the chapter rail becomes horizontal, and Detail's companion hides. Studio, approach, contact, forms and construction grids stack. Reels show a single main image. Project openings return to document flow; galleries become one column with alternating 90%-width portraits. Viewer controls remain 44px square.
+- **370px maximum:** navigation gaps become 15px, logo width 57px, invitation 50px, reel titles 23px and contact heading 32px.
 
 ## Elevation & Depth
 
-There are no box shadows. Tonal sections, photographic depth, typography and open space establish hierarchy. A deep rectangular action label overlays collection imagery on desktop hover/focus.
-
-Motion consists of a non-blocking aperture reveal (1.2s), short state transitions (0.2–0.3s) and a manually triggered photograph fade (300ms). Principal easing is `cubic-bezier(0.16, 1, 0.3, 1)`; the fade uses `ease-out`. Reduced motion disables CSS animations/transitions, uses automatic scrolling and skips the JavaScript fade. Hover/selected states remain immediate. No autoplay, loaders, custom cursors, liquid filters or runtime GSAP are present.
+Native sticky stacking provides the principal scene transition. Supported cross-document View Transitions fade the old page out over 0.2s and the new page in over 0.35s. State transitions last 0.2–0.3s; principal easing is `cubic-bezier(0.16, 1, 0.3, 1)`. Reduced motion disables animation and transitions and changes smooth scrolling to automatic scrolling.
 
 ## Shapes
 
-Square photographs and fields, thin horizontal rules and incomplete brass corners form the vocabulary. The aperture's top/right corner is persistent; project corners reveal on hover and keyboard focus. Short perpendicular ticks echo these marks. Thin inline SVG arrows identify actions. Fields have a baseline rather than a rounded or filled container.
+Square image frames, thin brass strokes and baseline fields define the interface. There are no box shadows or rounded panels. Gradients are functional photographic scrims for text contrast; do not add ornamental gradients or permanent photographic color filters.
 
 ## Components
 
-**Navigation/actions:** The header is in normal flow. Studio, Work, Approach and Contact links reveal brass underlines on hover/focus. Line actions use a brass baseline and a small arrow movement on hover. Contact rows show `+91 99693 13069` (`tel:+919969310369`) and `@hn.archin` (`https://www.instagram.com/hn.archin/`).
+**Actions and disclosures:** Text actions have a brass baseline, a minimum 44px height and a small arrow shift on hover. Native `details`/`summary` power project reels, construction photographs and the optional brief. Brass plus marks become minus marks when open. Construction hash links open their disclosure with JavaScript.
 
-**Perspective selector:** Three manual numbered buttons use `aria-pressed`, a selected underline and an accessible status message. Images decode before replacement; alt text follows the view and failures announce an explanation. Buttons are 44px square on desktop, 39px × 40px at 700px and below. Controls remain hidden without JavaScript.
+**Full-frame viewer:** Gallery photographs are direct-image links. When native dialog support and JavaScript are available, activation opens a full-viewport dialog with contained photography, a caption, count, Close, Previous and Next controls. Arrow keys cycle photographs and Escape closes the dialog. Modified clicks retain normal link behavior. Page scrolling locks while open.
 
-**Project links/captions:** Names, categories and indices persist. Hover/focus reveal the corner and “Explore project” label; mobile hides the image overlay and displays a caption arrow. Full-frame gallery figures have descriptive captions and actual indices. Next-project links continue the five-project cycle.
+**Brief and contact:** Transparent fields retain visible labels and baseline borders. Native validation requires name and vision. The brief downloads a local text file and sends no data; status says so. The form stays hidden without JavaScript and direct contact remains available. Contact uses +91 99693 13069 and @hn.archin only; the studio works remotely.
 
-**Disclosures/fields:** Native `details`/`summary` hold construction images and the homepage brief. Brass plus marks become minus marks when open. Construction grids have two desktop columns and one mobile column. Brief fields are transparent with muted baselines, brass carets and visible labels. Native validation requires name and vision. The download creates local plain text; it submits no data and uses no remote storage. Status explains this result.
-
-**Access/progressive enhancement:** Interactive elements have a 2px brass focus outline with a 6px offset. A skip link appears on focus; decorative marks and SVGs are hidden from assistive technology. Static photography, navigation, contact and native disclosures work without JavaScript. Construction fragments open their disclosure automatically with JavaScript, manually otherwise. The brief form is hidden until JavaScript is available; `noscript` explains direct-contact alternatives. Print switches to white/black, hides interactive extras and exposes disclosure content.
+**Progressive enhancement:** Keep a skip link, visible 2px brass focus outlines with 6px offsets, descriptive alt text, keyboard-operable native controls and usable static navigation. Print exposes disclosure content, removes interactive extras and uses white/black for reading sections.
 
 ## Do's and Don'ts
 
-### Do:
-
-- **Do** preserve the original logo and all 38 photographs; consult `project-assets.json` and `.impeccable/asset-provenance.json` for mappings, hashes and origins.
-- **Do** maintain the distinct display/body/index roles, unequal compositions, square frames and complete frames in galleries.
-- **Do** retain factual names: Residence, Restaurant 1, Entrance, Restaurant 2 and Ice cream parlour.
-- **Do** preserve keyboard focus, native disclosures, reduced-motion behavior and usable static content.
-- **Do** use the confirmed phone and Instagram for direct conversation.
-
-### Don't:
-
-- **Don't** introduce stock/generated replacement photography, permanent image filters, identical project cards, luxury serif styling, ornamental gradients or rounded panels.
-- **Don't** restore loaders, custom cursors, liquid effects, autoplay or runtime animation libraries.
-- **Don't** invent clients, dates, credentials, drawings, measurements or statistics.
-- **Don't** publish addresses, office locations, maps, directions or physical-visit invitations; the studio works remotely.
-- **Don't** imply that a locally downloaded brief has been sent.
+Preserve the original logo and all 38 supplied photographs; consult `project-assets.json` and `.impeccable/asset-provenance.json` for provenance. Keep the factual project names and confirmed contact details. Do not invent clients, credentials, dates, measurements or statistics. Do not publish physical locations or visit invitations. Avoid replacement imagery, giant replacement wordmarks, identical cards, luxury serif styling, loaders, custom cursors, liquid effects, autoplay and runtime animation libraries.
