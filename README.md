@@ -1,17 +1,18 @@
 # HN Architects & Interior Designers
 
-Static project portfolio with five dedicated galleries. Serve dist/ using any static HTTP server. No dependency installation or build is required for hosting. To regenerate the HTML after editing project copy, run node scripts/render-site.cjs from this directory.
+A studio-led architecture and interiors website, with an immersive welcome, studio introduction, five project galleries and direct contact. Serve dist/ with any static HTTP server. Run node scripts/render-site.cjs to regenerate all six HTML pages.
 
-## Project assets
-The user supplied ../PROJECTS and confirmed neutral public project names: Residence, Restaurant 1, Restaurant 2, Entrance and Ice cream parlour. All 38 supplied images are used: 28 finished-space views and 10 construction views. The original files are unchanged. Browser-compatible WebP copies are under dist/assets/projects/. HEIC photographs were decoded with macOS sips, then encoded for the web. No generative image editing, retouching, recoloring or replacements were used. project-assets.json records the original-to-web mapping and dimensions for every image.
+## Assets
+All 38 supplied photographs remain included: 28 finished views and 10 construction views. project-assets.json records the mapping from original photographs to WebP files. Public project names are the owner's approved neutral labels. The original transparent logo is unchanged. No stock photography or generated project imagery.
 
-All former stock photographs have been removed from the deployed source. The unchanged transparent logo remains dist/assets/logo.png, derived from the original 1092 × 1092 upload with RGB channels preserved.
+## Interaction
+A skippable architectural logo introduction runs once per session. An accessible modal menu supports Escape and keyboard focus. Project photographs show a brief liquid title on hover/focus; visible headings identify them on touch devices. Reduced motion removes distortion, scaling and custom cursor effects. Construction photographs use native disclosures. Contact is direct, with no simulated form submission.
 
-## Interaction and access
-Projects is in the top navigation. Each image links to its gallery; a brief SVG-displacement title appears on mouse hover and keyboard focus. Persistent captions provide names on touch devices. Reduced motion disables liquid distortion, scaling and the custom cursor. The logo introduction plays once per browser session and can be replayed. Construction photographs use native details controls. The project brief is a local text download; nothing is submitted.
+## Owner-provided contact
+Phone: +91 9969313069. Instagram: https://www.instagram.com/hn.archin/. The owner operates remotely and requested removal of physical location, address and map links.
 
-## Public business details
-The address is supported by [Justdial](https://www.justdial.com/Navi-Mumbai/HN-architects-interior-designers-Station-Ulwe/022PXX22-XX22-250612213622-P8I9_BZDET) and [Koovira](https://koovira.com/architect-in-navi-mumbai), researched 11 November 2026. The site uses a listing link for enquiries and Google Maps for directions. No unverified phone, email, dates, budgets, square footage or awards are published.
+## Libraries and design
+Local GSAP 3.12.5, Instrument Sans and Cormorant Garamond. The Cormorant OFL license is included in dist/assets. The current design follows the owner-invoked frontend-design skill and the composition of their Studio Kajal Soni reference, using only HN content and assets. Earlier refinement used Unslop by Damir Sokolovsky (@heydamir), https://heydamir.design/unslop, licensed CC BY 4.0: https://creativecommons.org/licenses/by/4.0/.
 
-## Libraries and design approach
-GSAP 3.12.5 is bundled locally. Instrument Sans and Italiana are from Google Fonts. The refinement follows the user-invoked Unslop skill, adapted from Unslop by Damir Sokolovsky (@heydamir), https://heydamir.design/unslop, licensed CC BY 4.0: https://creativecommons.org/licenses/by/4.0/.
+## Validation
+Desktop 1440px and mobile 390px browser review; no horizontal overflow. Menu open/close, Escape, section navigation and gallery navigation checked. Static local links verified across all six pages, all 38 photographs referenced, exact logo SHA-256 unchanged. No location strings in generated HTML.
