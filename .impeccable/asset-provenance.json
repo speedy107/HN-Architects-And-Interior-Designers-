@@ -1,0 +1,205 @@
+{
+  "photographs": "project-assets.json records all 38 user-supplied photographs and their original source paths. Existing web copies were preserved byte for byte.",
+  "logo": {
+    "path": "dist/assets/logo.png",
+    "origin": "Original user-supplied transparent logo, preserved from the existing repository.",
+    "sha256": "f754359b37b126c90a82820768b332dfe85f3ba02fb6d325cd3b1fb3c9740647"
+  },
+  "font": {
+    "path": "dist/assets/barlow-condensed-light.ttf",
+    "origin": "https://raw.githubusercontent.com/google/fonts/main/ofl/barlowcondensed/BarlowCondensed-Light.ttf",
+    "license": "dist/assets/barlow-OFL.txt"
+  },
+  "rasters": [
+    {
+      "path": "dist/assets/projects/entrance/1.webp",
+      "source": "PROJECTS/ENTRANCE 1/1.jpeg",
+      "sha256": "55f5c3307df416afdfcc337251fceafea4636a1d94adc4ed333d27424fab951e"
+    },
+    {
+      "path": "dist/assets/projects/entrance/2.webp",
+      "source": "PROJECTS/ENTRANCE 1/2.jpeg",
+      "sha256": "242f750debfc0ea283a4cfa3cce6bf14d700daa5014ce08b8fe302e1389c5dea"
+    },
+    {
+      "path": "dist/assets/projects/entrance/3.webp",
+      "source": "PROJECTS/ENTRANCE 1/3.jpeg",
+      "sha256": "9aca1eceea9ad0f913fc71b5247f1bb05a9c8283dbbb3c5a98db45c9f8f05ff7"
+    },
+    {
+      "path": "dist/assets/projects/entrance/4.webp",
+      "source": "PROJECTS/ENTRANCE 1/4.jpeg",
+      "sha256": "b5e5559f63b9a3ae1a349bea5ebb74bf9f3a4f1d11cd6f7b9f27ddf52e91f882"
+    },
+    {
+      "path": "dist/assets/projects/entrance/5.webp",
+      "source": "PROJECTS/ENTRANCE 1/5.jpeg",
+      "sha256": "a0098bd700069f4706c4450dd9ea124efc75e833a405659deb2c7edf099729b3"
+    },
+    {
+      "path": "dist/assets/projects/entrance/6.webp",
+      "source": "PROJECTS/ENTRANCE 1/6.jpeg",
+      "sha256": "327fb7b4dda3737597dae81af5c0c99c7d5186f7f8f3f3be13039817a2cf7a22"
+    },
+    {
+      "path": "dist/assets/projects/entrance/before-b1.webp",
+      "source": "PROJECTS/ENTRANCE 1/BEFORE/B1.jpeg",
+      "sha256": "4c0decd260691378ef5ed37098acb0892220150bf0136ba7ebc7eebb1309adf4"
+    },
+    {
+      "path": "dist/assets/projects/entrance/before-b2.webp",
+      "source": "PROJECTS/ENTRANCE 1/BEFORE/B2.jpeg",
+      "sha256": "0d604e74db0768a93db9e6f2f382cb471ea360911f740825bd909a093fb8834b"
+    },
+    {
+      "path": "dist/assets/projects/entrance/before-b3.webp",
+      "source": "PROJECTS/ENTRANCE 1/BEFORE/B3.jpeg",
+      "sha256": "5bfd49834b01fb104199b38d9136cb933d56a90cbeaa46ca01b8050f9e742a0f"
+    },
+    {
+      "path": "dist/assets/projects/residence/before-b1.webp",
+      "source": "PROJECTS/RESIDENTIAL1/BEFORE/B1.HEIC",
+      "sha256": "7b1c0685e6ce980880e21f5ec10c306110bf91190334cdf0f27fbdaa3cfeac1f"
+    },
+    {
+      "path": "dist/assets/projects/residence/before-b2.webp",
+      "source": "PROJECTS/RESIDENTIAL1/BEFORE/B2.JPG",
+      "sha256": "095ea32ccb57a53136b11daf79ffd2ac72be1eb55a4ba69dbed814e46dde82e7"
+    },
+    {
+      "path": "dist/assets/projects/residence/before-b3.webp",
+      "source": "PROJECTS/RESIDENTIAL1/BEFORE/B3.JPG",
+      "sha256": "3e9cc0af025e6f53a8710a3fcc6646390ea5c25314d5c6800757afa1b780255a"
+    },
+    {
+      "path": "dist/assets/projects/residence/kb1.webp",
+      "source": "PROJECTS/RESIDENTIAL1/KB1.jpeg",
+      "sha256": "4607949978edaa549b607122e8af1b2daba1401bd408ca517b10b3e82e3475b1"
+    },
+    {
+      "path": "dist/assets/projects/residence/kb2.webp",
+      "source": "PROJECTS/RESIDENTIAL1/KB2.HEIC",
+      "sha256": "58450fdce7dbf9921b6306c8c2c65d65dc3569fb8563200e06a6744a4f9b78d5"
+    },
+    {
+      "path": "dist/assets/projects/residence/lr1.webp",
+      "source": "PROJECTS/RESIDENTIAL1/LR1.jpeg",
+      "sha256": "25bf720ad09f35d366470dea4100a4761b5550073fb5adb4a5430c5d811a062e"
+    },
+    {
+      "path": "dist/assets/projects/residence/lr2.webp",
+      "source": "PROJECTS/RESIDENTIAL1/LR2.jpeg",
+      "sha256": "5d99720faa2605999619a5ed96d7061dc1637b79bb817277d4d6da8dcb37128c"
+    },
+    {
+      "path": "dist/assets/projects/residence/lr3.webp",
+      "source": "PROJECTS/RESIDENTIAL1/LR3.jpeg",
+      "sha256": "e03559c037372b6622dac54c3bdc5efd846b642f22cc00b32a316a0adf5963c4"
+    },
+    {
+      "path": "dist/assets/projects/residence/mb1.webp",
+      "source": "PROJECTS/RESIDENTIAL1/MB1.HEIC",
+      "sha256": "36d2d4b010d65734119b4dce3f4fb7bd5d069d023ab66b616a413264a66284ba"
+    },
+    {
+      "path": "dist/assets/projects/residence/mb2.webp",
+      "source": "PROJECTS/RESIDENTIAL1/MB2.jpeg",
+      "sha256": "6d6aea28acb707535cc28a5273bf0eb4cea04710a4a917c62c36c41faa4d29ac"
+    },
+    {
+      "path": "dist/assets/projects/restaurant-1/1.webp",
+      "source": "PROJECTS/RESTAURANT 1/1.jpeg",
+      "sha256": "1dd829972dd63e8bce652996f7a703d37517963293741d79fcdedeee916c95d9"
+    },
+    {
+      "path": "dist/assets/projects/restaurant-1/2.webp",
+      "source": "PROJECTS/RESTAURANT 1/2.jpeg",
+      "sha256": "1781ddae28dcdf0beb3eca0c41d0ae043ac1bf6ad477da50f8b1925dcd2a0a75"
+    },
+    {
+      "path": "dist/assets/projects/restaurant-1/3.webp",
+      "source": "PROJECTS/RESTAURANT 1/3.jpeg",
+      "sha256": "e201bd4a249df186f2f3f6e014269f91214f2645ed1001d2b21398feeda264e8"
+    },
+    {
+      "path": "dist/assets/projects/restaurant-1/4.webp",
+      "source": "PROJECTS/RESTAURANT 1/4.jpeg",
+      "sha256": "199302815a576031af3c9c336a0a1b8708c2f3479f0c81388959a138372bd634"
+    },
+    {
+      "path": "dist/assets/projects/restaurant-1/5.webp",
+      "source": "PROJECTS/RESTAURANT 1/5.jpeg",
+      "sha256": "c97586457c3d810f102d46395bb2059b22a8e22f4ddac0501e86fa55994a2a7f"
+    },
+    {
+      "path": "dist/assets/projects/restaurant-1/before-b1.webp",
+      "source": "PROJECTS/RESTAURANT 1/BEFORE/B1.jpeg",
+      "sha256": "7b6ddbd30be117bacfa52c025c42639d851194ff9411a4f2d18dd28ccc3143af"
+    },
+    {
+      "path": "dist/assets/projects/restaurant-1/before-b2.webp",
+      "source": "PROJECTS/RESTAURANT 1/BEFORE/B2.jpeg",
+      "sha256": "628af845538ebb5048c8dfc9e5d0a0d4b1f8cd3d41e2035210478c38453871fa"
+    },
+    {
+      "path": "dist/assets/projects/restaurant-1/before-b3.webp",
+      "source": "PROJECTS/RESTAURANT 1/BEFORE/B3.jpeg",
+      "sha256": "18d5d181f61eae2e8cdc164693b17a50fe71c6ea31e91c5137d4fd50dd0dfc57"
+    },
+    {
+      "path": "dist/assets/projects/restaurant-1/before-b4.webp",
+      "source": "PROJECTS/RESTAURANT 1/BEFORE/B4.jpeg",
+      "sha256": "685dc69eebff97486e6e133376e9404bc58f6374c19ccb2841dba66394be3160"
+    },
+    {
+      "path": "dist/assets/projects/restaurant-2/1.webp",
+      "source": "PROJECTS/RESTAURANT 2/1.jpeg",
+      "sha256": "b8a2d9e7bf4c5dfc683973bf2cae0320a107f70b6b0946cc6ff6ba9015bda389"
+    },
+    {
+      "path": "dist/assets/projects/restaurant-2/2.webp",
+      "source": "PROJECTS/RESTAURANT 2/2.jpeg",
+      "sha256": "f648ce4cee8cdc329457ed4cb7cf74d3da4ad798cc9d9f961f8edbada914fd11"
+    },
+    {
+      "path": "dist/assets/projects/restaurant-2/3.webp",
+      "source": "PROJECTS/RESTAURANT 2/3.jpeg",
+      "sha256": "788af204d29e67655e556420ebca7c61435044cc26f89bbf75d219e437ba1848"
+    },
+    {
+      "path": "dist/assets/projects/restaurant-2/4.webp",
+      "source": "PROJECTS/RESTAURANT 2/4.jpeg",
+      "sha256": "048f8b19644ca12139aa91d92d85c4cf852d5c318aca0592222b2a818e2a1cc8"
+    },
+    {
+      "path": "dist/assets/projects/restaurant-2/5.webp",
+      "source": "PROJECTS/RESTAURANT 2/5.jpeg",
+      "sha256": "cffb7eaf98603206d55a9fdf543f8628b255c2a2c87726dd1534bc0af545a578"
+    },
+    {
+      "path": "dist/assets/projects/ice-cream-parlour/1.webp",
+      "source": "PROJECTS/SHOP 1/1.jpg",
+      "sha256": "9e25cc1cc7a76d991524917fa311afaa3f93e21ff85c6d48765fc6fcf3117ee5"
+    },
+    {
+      "path": "dist/assets/projects/ice-cream-parlour/2.webp",
+      "source": "PROJECTS/SHOP 1/2.jpg",
+      "sha256": "65e637ce6b294a019afcca83bb00ece70fdd33081c7dbff1e1985b7ac7b4df61"
+    },
+    {
+      "path": "dist/assets/projects/ice-cream-parlour/3.webp",
+      "source": "PROJECTS/SHOP 1/3.jpg",
+      "sha256": "721b4780b187187bfac9714272e34a85897bacefec81e2fc857d7c2e3310114f"
+    },
+    {
+      "path": "dist/assets/projects/ice-cream-parlour/4.webp",
+      "source": "PROJECTS/SHOP 1/4.jpg",
+      "sha256": "6c792c0dc53c026d9091a21c18f63f8994c198fce45853bfed583a025501e95e"
+    },
+    {
+      "path": "dist/assets/projects/ice-cream-parlour/5.webp",
+      "source": "PROJECTS/SHOP 1/5.jpg",
+      "sha256": "e983a06fc873e674831790ae54d187238ae0a9076099adfd70e5e7c8d890e5f8"
+    }
+  ]
+}

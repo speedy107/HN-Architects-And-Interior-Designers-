@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-11T17:15:39.978494Z",
+  "title": "Design System: HN Architects & Interior Designers",
+  "extensions": {
+    "colorMeta": {
+      "bg": {
+        "displayName": "Charcoal",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.00248 145.49)",
+          "oklch(26% 0.00248 145.49)",
+          "oklch(38% 0.00248 145.49)",
+          "oklch(49% 0.00248 145.49)",
+          "oklch(61% 0.00248 145.49)",
+          "oklch(72% 0.00248 145.49)",
+          "oklch(84% 0.00248 145.49)",
+          "oklch(95% 0.00248 145.49)"
+        ],
+        "purpose": "Preview ramp synthesized from the implemented swatch hue/chroma; ramp steps are not shipping CSS tokens."
+      },
+      "deep": {
+        "displayName": "Deep Ground",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.00259 145.46)",
+          "oklch(26% 0.00259 145.46)",
+          "oklch(38% 0.00259 145.46)",
+          "oklch(49% 0.00259 145.46)",
+          "oklch(61% 0.00259 145.46)",
+          "oklch(72% 0.00259 145.46)",
+          "oklch(84% 0.00259 145.46)",
+          "oklch(95% 0.00259 145.46)"
+        ],
+        "purpose": "Preview ramp synthesized from the implemented swatch hue/chroma; ramp steps are not shipping CSS tokens."
+      },
+      "ink": {
+        "displayName": "Warm Ivory",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.01570 86.43)",
+          "oklch(26% 0.01570 86.43)",
+          "oklch(38% 0.01570 86.43)",
+          "oklch(49% 0.01570 86.43)",
+          "oklch(61% 0.01570 86.43)",
+          "oklch(72% 0.01570 86.43)",
+          "oklch(84% 0.01570 86.43)",
+          "oklch(95% 0.01570 86.43)"
+        ],
+        "purpose": "Preview ramp synthesized from the implemented swatch hue/chroma; ramp steps are not shipping CSS tokens."
+      },
+      "gold": {
+        "displayName": "Muted Brass",
+        "role": "primary",
+        "tonalRamp": [
+          "oklch(15% 0.08110 83.88)",
+          "oklch(26% 0.08110 83.88)",
+          "oklch(38% 0.08110 83.88)",
+          "oklch(49% 0.08110 83.88)",
+          "oklch(61% 0.08110 83.88)",
+          "oklch(72% 0.08110 83.88)",
+          "oklch(84% 0.08110 83.88)",
+          "oklch(95% 0.08110 83.88)"
+        ],
+        "purpose": "Preview ramp synthesized from the implemented swatch hue/chroma; ramp steps are not shipping CSS tokens."
+      },
+      "muted": {
+        "displayName": "Quiet Grey",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.01042 100.09)",
+          "oklch(26% 0.01042 100.09)",
+          "oklch(38% 0.01042 100.09)",
+          "oklch(49% 0.01042 100.09)",
+          "oklch(61% 0.01042 100.09)",
+          "oklch(72% 0.01042 100.09)",
+          "oklch(84% 0.01042 100.09)",
+          "oklch(95% 0.01042 100.09)"
+        ],
+        "purpose": "Preview ramp synthesized from the implemented swatch hue/chroma; ramp steps are not shipping CSS tokens."
+      },
+      "secondary": {
+        "displayName": "Supporting Grey",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.01417 102.10)",
+          "oklch(26% 0.01417 102.10)",
+          "oklch(38% 0.01417 102.10)",
+          "oklch(49% 0.01417 102.10)",
+          "oklch(61% 0.01417 102.10)",
+          "oklch(72% 0.01417 102.10)",
+          "oklch(84% 0.01417 102.10)",
+          "oklch(95% 0.01417 102.10)"
+        ],
+        "purpose": "Preview ramp synthesized from the implemented swatch hue/chroma; ramp steps are not shipping CSS tokens."
+      },
+      "line": {
+        "displayName": "Structural Grey",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.01054 121.98)",
+          "oklch(26% 0.01054 121.98)",
+          "oklch(38% 0.01054 121.98)",
+          "oklch(49% 0.01054 121.98)",
+          "oklch(61% 0.01054 121.98)",
+          "oklch(72% 0.01054 121.98)",
+          "oklch(84% 0.01054 121.98)",
+          "oklch(95% 0.01054 121.98)"
+        ],
+        "purpose": "Preview ramp synthesized from the implemented swatch hue/chroma; ramp steps are not shipping CSS tokens."
+      }
+    },
+    "typographyMeta": {
+      "display-hn": {
+        "displayName": "HN display",
+        "purpose": "Oversized identity; Barlow is the CSS alias for self-hosted Barlow Condensed Light."
+      },
+      "display-wordmark": {
+        "displayName": "Architects wordmark",
+        "purpose": "Lower hero identity line."
+      },
+      "headline": {
+        "displayName": "Selected-work headline",
+        "purpose": "Main collection heading."
+      },
+      "project-title": {
+        "displayName": "Project title",
+        "purpose": "Individual project openings."
+      },
+      "project-caption": {
+        "displayName": "Project caption",
+        "purpose": "Persistent collection names; Restaurant 1 has a contextual display exception."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Existing locally hosted Instrument Sans for reading and interface text."
+      },
+      "navigation": {
+        "displayName": "Navigation",
+        "purpose": "Desktop text navigation."
+      },
+      "photo-index": {
+        "displayName": "Photograph index",
+        "purpose": "Actual photo, perspective and collection indices; tabular numerals."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.16,1,0.3,1)",
+        "purpose": "Principal CSS state/reveal easing."
+      },
+      {
+        "name": "aperture-open",
+        "value": "1.2s",
+        "purpose": "Single initial clip-path reveal, only with no reduced-motion preference."
+      },
+      {
+        "name": "navigation-and-arrow",
+        "value": "0.25s",
+        "purpose": "Navigation underlines, perspective underlines and action arrows."
+      },
+      {
+        "name": "project-feedback",
+        "value": "opacity 0.2s, transform 0.3s",
+        "purpose": "Collection corner and image-action state changes."
+      },
+      {
+        "name": "disclosure-mark",
+        "value": "transform 0.2s",
+        "purpose": "Native plus/minus mark."
+      },
+      {
+        "name": "perspective-fade",
+        "value": "300ms ease-out",
+        "purpose": "Manual image replacement opacity from 0.65 to 1; skipped for reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide",
+        "value": "min-width: 1800px"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "max-width: 1100px"
+      },
+      {
+        "name": "mobile",
+        "value": "max-width: 700px"
+      },
+      {
+        "name": "small-mobile",
+        "value": "max-width: 370px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "description": "Plain header links with a brass underline on hover and keyboard focus.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"#studio\">Studio</a><a href=\"#projects\">Work</a><a href=\"#approach\">Approach</a><a href=\"#contact\">Contact</a></nav>",
+      "css": ".ds-nav{display:flex;gap:35px;font-family:var(--sans,Instrument,Arial,sans-serif);color:var(--ink,#e9e4d9)}.ds-nav a{position:relative;padding:10px 0;font-size:14px;color:inherit;text-decoration:none}.ds-nav a:after{content:\"\";position:absolute;left:0;right:0;bottom:4px;height:1px;background:var(--gold,#b69a62);transform:scaleX(0);transform-origin:left;transition:transform .25s cubic-bezier(0.16,1,0.3,1)}.ds-nav a:hover:after,.ds-nav a:focus-visible:after{transform:scaleX(1)}.ds-nav a:focus-visible{outline:2px solid var(--gold,#b69a62);outline-offset:6px;}@media(prefers-reduced-motion:reduce){.ds-nav a:after{transition:none}}"
+    },
+    {
+      "name": "Line action",
+      "kind": "button",
+      "refersTo": "line-link",
+      "description": "Transparent action with a brass baseline and thin directional arrow.",
+      "html": "<button class=\"ds-line\" type=\"button\">Download your brief <svg viewBox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M4 12h15M12 5l7 7-7 7\"/></svg></button>",
+      "css": ".ds-line{display:inline-flex;align-items:center;gap:30px;padding:12px 0;border:0;border-bottom:1px solid var(--gold,#b69a62);background:transparent;color:var(--ink,#e9e4d9);font:400 15px/1.5 var(--sans,Instrument,Arial,sans-serif);text-align:left;cursor:pointer}.ds-line svg{width:22px;height:24px;stroke:currentColor;stroke-width:1.15;transition:transform .25s cubic-bezier(0.16,1,0.3,1)}.ds-line:hover{color:var(--gold,#b69a62)}.ds-line:hover svg{transform:translateX(4px)}.ds-line:focus-visible{outline:2px solid var(--gold,#b69a62);outline-offset:6px;}@media(prefers-reduced-motion:reduce){.ds-line svg{transition:none}}"
+    },
+    {
+      "name": "Perspective numbers",
+      "kind": "button",
+      "refersTo": "perspective-button",
+      "description": "Manual photograph selector; selected state is shown through pressed semantics and a brass rule. This preview shows the initial state.",
+      "html": "<div class=\"ds-perspectives\" role=\"group\" aria-label=\"Entrance perspectives\"><button type=\"button\" aria-label=\"Entrance perspective 1\" aria-pressed=\"true\">01</button><button type=\"button\" aria-label=\"Entrance perspective 2\" aria-pressed=\"false\">02</button><button type=\"button\" aria-label=\"Entrance perspective 3\" aria-pressed=\"false\">03</button></div>",
+      "css": ".ds-perspectives{display:flex;gap:8px}.ds-perspectives button{position:relative;width:44px;height:44px;border:0;background:none;color:var(--muted,#85847d);font:400 11px var(--mono,ui-monospace,\"SFMono-Regular\",Consolas,monospace);cursor:pointer}.ds-perspectives button:after{content:\"\";position:absolute;left:12px;right:12px;bottom:4px;height:1px;background:var(--gold,#b69a62);transform:scaleX(0);transition:transform .25s cubic-bezier(0.16,1,0.3,1)}.ds-perspectives button[aria-pressed=\"true\"]{color:var(--ink,#e9e4d9)}.ds-perspectives button[aria-pressed=\"true\"]:after,.ds-perspectives button:hover:after{transform:scaleX(1)}.ds-perspectives button:focus-visible{outline:2px solid var(--gold,#b69a62);outline-offset:6px;}@media(prefers-reduced-motion:reduce){.ds-perspectives button:after{transition:none}}"
+    },
+    {
+      "name": "Brief field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Visible label above a transparent field with a muted baseline and brass caret.",
+      "html": "<label class=\"ds-field\">Your name<input name=\"name\" autocomplete=\"name\" maxlength=\"160\" required></label>",
+      "css": ".ds-field{display:block;color:var(--ink,#e9e4d9);font:400 13px/1.6 var(--sans,Instrument,Arial,sans-serif)}.ds-field input{display:block;width:100%;border:0;border-bottom:1px solid var(--muted,#85847d);border-radius:0;padding:12px 0;background:transparent;color:var(--ink,#e9e4d9);caret-color:var(--gold,#b69a62);font:400 16px/1.6 var(--sans,Instrument,Arial,sans-serif)}.ds-field input:focus-visible{outline:2px solid var(--gold,#b69a62);outline-offset:6px;}"
+    },
+    {
+      "name": "Native disclosure",
+      "kind": "custom",
+      "refersTo": "disclosure-summary",
+      "description": "Native brief disclosure with structural rules and a plus/minus mark.",
+      "html": "<details class=\"ds-disclosure\"><summary>Put your ideas on paper<span class=\"ds-mark\" aria-hidden=\"true\"></span></summary><p>A small starting point for your conversation. Download a project brief to keep or share with us. Your details stay on your device.</p></details>",
+      "css": ".ds-disclosure{border-top:1px solid var(--line,#393b35);border-bottom:1px solid var(--line,#393b35);color:var(--ink,#e9e4d9);font-family:var(--sans,Instrument,Arial,sans-serif)}.ds-disclosure summary{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:24px 0;font-size:15px;list-style:none;cursor:pointer}.ds-disclosure summary::-webkit-details-marker{display:none}.ds-disclosure summary:focus-visible{outline:2px solid var(--gold,#b69a62);outline-offset:6px;}.ds-mark{position:relative;width:18px;height:18px;flex-shrink:0}.ds-mark:before,.ds-mark:after{content:\"\";position:absolute;top:8px;left:0;width:17px;height:1px;background:var(--gold,#b69a62)}.ds-mark:after{transform:rotate(90deg);transition:transform .2s}.ds-disclosure[open] .ds-mark:after{transform:rotate(0)}.ds-disclosure p{max-width:34ch;padding:24px 0 40px;margin:0;font-size:15px;color:#aaa99f;line-height:1.6}@media(prefers-reduced-motion:reduce){.ds-mark:after{transition:none}}"
+    },
+    {
+      "name": "Project caption",
+      "kind": "custom",
+      "description": "Persistent collection identity: actual collection index, project name and category, separated by a structural baseline.",
+      "html": "<div class=\"ds-caption\"><span class=\"ds-index\">01</span><h3>Residence</h3><span class=\"ds-category\">Residential interior</span></div>",
+      "css": ".ds-caption{display:flex;align-items:center;gap:18px;padding:18px 0 14px;border-bottom:1px solid var(--line,#393b35);color:var(--ink,#e9e4d9);font-family:var(--sans,Instrument,Arial,sans-serif)}.ds-index{font:400 11px/1.5 var(--mono,ui-monospace,\"SFMono-Regular\",Consolas,monospace);font-variant-numeric:tabular-nums;color:var(--gold,#b69a62)}.ds-caption h3{margin:0;font-size:24px;font-weight:400;line-height:1.2;letter-spacing:-.02em}.ds-category{margin-left:auto;font-size:12px;color:#aaa99f}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Open Architectural Section",
+    "overview": "An experimental editorial identity with cinematic scale: light condensed lettering counterbalances tall photographic apertures and deliberate gaps. Warm photographs sit directly on charcoal; unequal compositions provide variety. The original transparent silver/gold logo and all 38 supplied photographs remain the evidence.",
+    "keyCharacteristics": [
+      "Oversized condensed type and real architectural photography.",
+      "Charcoal grounds, warm ivory text and precise brass marks.",
+      "Unequal grids, square frames and open corners.",
+      "Manual interactions, native disclosures and progressive enhancement."
+    ],
+    "rules": [
+      {
+        "name": "The Photograph Rule",
+        "body": "Preserve supplied photographs without a permanent color wash, saturation filter or replacement imagery.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Voices Rule",
+        "body": "Use Barlow for expressive scale and Instrument for reading and controls. Reserve monospace for indices and perspective numbers.",
+        "section": "typography"
+      }
+    ],
+    "dos": [
+      "**Do** preserve the original logo and all 38 photographs; consult `project-assets.json` and `.impeccable/asset-provenance.json` for mappings, hashes and origins.",
+      "**Do** maintain the distinct display/body/index roles, unequal compositions, square frames and complete frames in galleries.",
+      "**Do** retain factual names: Residence, Restaurant 1, Entrance, Restaurant 2 and Ice cream parlour.",
+      "**Do** preserve keyboard focus, native disclosures, reduced-motion behavior and usable static content.",
+      "**Do** use the confirmed phone and Instagram for direct conversation."
+    ],
+    "donts": [
+      "**Don't** introduce stock/generated replacement photography, permanent image filters, identical project cards, luxury serif styling, ornamental gradients or rounded panels.",
+      "**Don't** restore loaders, custom cursors, liquid effects, autoplay or runtime animation libraries.",
+      "**Don't** invent clients, dates, credentials, drawings, measurements or statistics.",
+      "**Don't** publish addresses, office locations, maps, directions or physical-visit invitations; the studio works remotely.",
+      "**Don't** imply that a locally downloaded brief has been sent."
+    ]
+  }
+}

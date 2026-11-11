@@ -5,16 +5,16 @@
 web
 
 ## Purpose and users
-A photographic portfolio for prospective residential and restaurant clients, with studio contact information and a local project-brief download.
+The studio’s digital identity and photographic portfolio for prospective clients, including people arriving from Instagram. Introduce the practice before presenting selected projects; make direct contact easy.
 
 ## Confirmed content
-The user supplied five project folders and explicitly requested their use in place of stock photography. All 38 photographs are included: 28 finished-space views and 10 construction views. Project names follow the user's requested neutral naming: Residence, Restaurant 1, Restaurant 2, Entrance, Ice cream parlour. Do not promote visible business signs into public project names without the user's instruction.
+Five neutral project names: Residence, Restaurant 1, Entrance, Restaurant 2, Ice cream parlour. All 38 supplied photographs remain: 28 completed-space views and 10 construction views. Original-to-web provenance and dimensions are in project-assets.json. Do not invent client names, dates, budgets, drawings, measurements, awards, credentials or studio history. Do not use stock or generated replacement photography.
 
 ## Brand commitments
-Preserve the exact original silver/gold logo with transparent background, dark charcoal palette, architectural introduction and gold concentric cursor. The new direction is a professional photographic monograph. The user rejected generic slogans, repetitive heading/subheading pairs, ornamental arrows, category cards, three-part process or meeting cards, and repeated location labels. Projects must appear in the top navigation. Project photographs reveal their names through a brief liquid-text hover animation. Touch users and keyboard users must retain clear project names.
+The November 2026 redesign brief replaces the former photographic monograph direction. The identity is experimental editorial × cinematic architecture, in charcoal #171817, near black #101110, muted brass #B69A62, warm ivory #E9E4D9 and supporting grey #85847D. Preserve the original transparent silver/gold logo. Establish a recognisable identity through typography and composition even without the logo. Avoid identical project cards, generic luxury serif styling, ornamental gradients, fake loaders, custom cursors, liquid effects and excessive animation. Respect keyboard, touch and reduced motion.
 
-## Evidence
-Project photography: ../PROJECTS, mapped individually in project-assets.json. The source files remain untouched; web copies are auto-oriented and compressed. Verified studio address: Bay Bliss, Plot 04, Sector 9, Ulwe, Navi Mumbai 410206. Public sources are recorded in README.md. No verified phone, email, dates, project sizes, budgets, awards or founder details were provided; do not invent them.
+## Contact truth
+The studio operates remotely. No physical addresses, office locations, maps, directions or location-based contact information may be displayed. Direct phone: +91 99693 13069, tel:+919969310369. Instagram: @hn.archin, https://www.instagram.com/hn.archin/. These are supplied by the user and supersede the old listing-based contact details.
 
 ## Functionality
-Five static project galleries, including expandable construction photographs for three projects. Plain text navigation, accessible anchors, native disclosures and form labels. Local project-brief text download sends no data. Public enquiries continue through the verified studio listing; directions through Google Maps. New Sites publication preserves existing private access.
+A static identity-led homepage, studio introduction, five editorial project galleries, construction imagery and direct phone/Instagram contact. The opening perspective selector uses three real Entrance photographs. Native disclosures hold construction images and the optional local brief download. The download sends no information; without JavaScript, contact links, navigation and photographs remain available and the unusable download form stays hidden. No backend, external runtime library, analytics or tracking.
