@@ -19,3 +19,6 @@ Review: the previous first-screen portfolio and dark repetitive monograph failed
 
 ## Implementation standards
 Responsive navigation via an accessible modal menu, Escape and close controls. Phone links call +91 9969313069; Instagram links open hn.archin. No form that pretends to submit. Intro remains skippable and runs once per session. Reduced motion disables effects; keyboard focus visible. Local fonts and source photography; no stock.
+
+## Owner-directed restoration, 12 November 2026
+Restore the first iteration's offset oversized Italiana headline, “Spaces with soul.” with gold Georgia emphasis, framed real interior photograph and charcoal canvas. Restore its split studio story, staggered two-image gallery, materials/details passage and full-bleed bedroom pause. Retain the latest contact section exactly. Portfolio navigation now groups all 38 photographs into Residential (residence and entrance) and Dining spaces (restaurants and parlour). No numbered restaurant names. Legacy project URLs remain compatible. Phone and Instagram retained; no address.
