@@ -9,3 +9,6 @@ Implemented: native menu cursor; pre-paint session loader class and cleanup with
 Hero source PROJECTS/RESIDENTIAL1/LR2.jpeg is only 960 × 1280. Supply a native export at least 2000px wide for a sharper large-screen hero. No artificial upscale was created.
 
 Validation: Lighthouse accessibility 100/100 (report in review/); homepage overflow and headline fit checked at 360, 768, 1440, 1920px. Walkthrough button and keyboard updates, native menu cursor and Escape verified in browser. No console errors. CSS provides native touch scrolling and reduced-motion alternatives; physical touchscreen swipe and OS reduced-motion mode were not directly exercised. Static checks retain all 38 photos and exact logo. About placeholders intentionally require owner content.
+
+## Interactive direction
+Owner's latest feedback supersedes the earlier restraint on added effects. This experiment adds a floating section dock with a sliding active pill, a magnetic hero CTA, expanding Residential/Dining photographic portals, and a GSAP photo-to-fullscreen transition into galleries. Mobile portals stack and remain direct links. Reduced motion disables magnetic movement and the transition. Original production source and deployment remain untouched. Work is on codex/interactive-studio.
