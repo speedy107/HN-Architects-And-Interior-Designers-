@@ -25,3 +25,8 @@ html.intro-pending .loader{visibility:visible;pointer-events:auto}html.intro-pen
 @media(max-width:650px){.planning{padding:65px var(--gutter) 75px}.planning-intro{display:block;margin-bottom:40px}.planning-intro h2{font-size:40px}.planning-intro>p{margin-top:25px;max-width:none}.planning-grid{grid-template-columns:1fr;gap:32px}.planning-text{padding-top:24px}.planning-grid h3{font-size:31px;margin-bottom:16px}.planning-grid p{font-size:16px;max-width:44ch}.about-hn{padding:65px var(--gutter)}.about-description{font-size:37px}.about-bottom{gap:30px;align-items:start;flex-direction:column;margin-top:35px}.completed-sites strong{font-size:65px}.founder>p{font-size:21px}}
 
 @media(max-width:650px){.floating-dock a{font-size:10.5px;padding:13px 9px}}
+/* Upright lining numerals for the studio count and phone number. */
+@font-face{font-family:HN-Numerals;src:url('assets/instrument-sans-medium.ttf') format('truetype');font-weight:500;font-display:swap}
+.completed-sites strong{font-family:HN-Numerals,var(--sans);font-weight:500;font-variant-numeric:lining-nums proportional-nums;letter-spacing:-.045em}
+.contact-methods>.phone-link{font-family:HN-Numerals,var(--sans);font-size:30px;font-weight:500;font-variant-numeric:lining-nums proportional-nums;letter-spacing:-.025em}
+@media(max-width:650px){.contact-methods>.phone-link{font-size:27px}}
